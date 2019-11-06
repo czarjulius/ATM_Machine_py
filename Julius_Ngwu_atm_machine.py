@@ -23,6 +23,7 @@ while status:
         """)
         Option=int(input("Enter Option: "))
 
+# User needs wants to check account balance
         if Option==1:
             print("Balance  ₦",balance)
             follow_up = print("Do You want to perform another transaction Yes(y)/ No(n)")
@@ -32,7 +33,7 @@ while status:
             if trigger_status == 'N':
                 status = False
 
-
+# User wants to withdraw cash
         if Option==2:
             print("Balance  ₦",balance)
             Withdraw=float(input("Enter Withdraw amount ₦ "))
@@ -60,7 +61,7 @@ while status:
                 if trigger_status == 'N':
                     status = False
                 
-
+# User wants to deposit cash
         if Option==3:
             print("Balance  ₦",balance)
             Deposit=float(input("Enter deposit amount ₦ "))
@@ -76,7 +77,7 @@ while status:
             else:
                 print("None deposit made")
 
-
+# User wants to exit 
         if Option==4:
             exit()
     else:
